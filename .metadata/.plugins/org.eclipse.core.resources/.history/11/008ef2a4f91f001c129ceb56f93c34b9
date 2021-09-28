@@ -1,0 +1,10 @@
+package 이메일확인;
+
+public class EmailChecking {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

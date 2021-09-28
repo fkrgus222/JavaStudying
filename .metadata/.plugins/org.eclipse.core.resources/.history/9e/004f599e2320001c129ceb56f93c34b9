@@ -1,0 +1,29 @@
+package Set°è¿­ÀÇÅ¬·¡½ºµé¿¹Á¦;
+
+import java.util.Set;
+import java.util.HashSet;
+
+public class HashSetClassEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set<Member> member_set = new HashSet<Member>();
+		
+		
+		//[»ç·Ê] ±ÝÀ¶±ÇÀÎ °æ¿ì ¶È°°Àº °´Ã¼°¡ µÎ °³°¡ »ý¼ºµÉ ¼ö ¾ø´Ù.
+		
+		Member member1 = new Member("¼ÕÈï¹Î",29,"111111-1111111");
+		Member member2 = new Member("¼ÕÈï¹Î",29,"111111-1111111");
+		
+		member_set.add(member1);
+		member_set.add(member2);
+		
+		System.out.println("ÃÑ °´Ã¼¼ö: " + member_set.size());  //ÃÑ °´Ã¼¼ö : 1
+		
+		System.out.println(member1.hashCode());
+		System.out.println(member2.hashCode());
+	}
+
+}
+ 

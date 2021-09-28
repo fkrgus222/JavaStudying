@@ -1,0 +1,10 @@
+package 금액에꼼마넣기;
+
+public class Utils {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

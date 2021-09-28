@@ -1,0 +1,22 @@
+package 주민번호체크;
+
+public class Utils {
+	
+	public static int stepOne(String target) {
+		int sum = 0;
+		int multiple = 2;
+		for (int i = 0 ; i < target.length() ; i++) {
+			int tmp = (int)(target.charAt(i));
+			if (multiple == 10) {
+				multiple = 2;
+			}
+			if (tmp >= 0 && tmp <= 9) {
+				sum += multiple*tmp;
+			}
+			
+			sum += 1;
+		}
+		return sum;
+	}
+
+}

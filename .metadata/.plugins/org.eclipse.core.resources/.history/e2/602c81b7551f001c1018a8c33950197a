@@ -1,0 +1,18 @@
+package 주민번호체크;
+
+import java.util.Scanner;
+
+public class CheckingDigit {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String digit = in.next();
+		
+		int stepOneAnswer = Utils.stepOne(digit);
+		System.out.println(stepOneAnswer);
+		
+		
+
+	}
+
+}

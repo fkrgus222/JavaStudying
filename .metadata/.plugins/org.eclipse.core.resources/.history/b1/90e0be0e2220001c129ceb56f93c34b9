@@ -1,0 +1,15 @@
+package Set계열의클래스들예제;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Member {
+	
+	List<String> list = new ArrayList<String>(); 
+	
+	Set<String> list2 = new HashSet<String>();
+	
+	
+}

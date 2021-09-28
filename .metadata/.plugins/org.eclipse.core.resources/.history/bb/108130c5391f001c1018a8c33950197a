@@ -1,0 +1,10 @@
+package 변수와자료형;
+
+public class VariableScopeEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

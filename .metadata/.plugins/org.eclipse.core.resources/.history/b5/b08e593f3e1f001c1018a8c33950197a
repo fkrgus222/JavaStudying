@@ -1,0 +1,15 @@
+package 변수와자료형;
+
+public class URLPath {
+
+	public static void main(String[] args) {
+
+		String url = "http://localhost:8000/Model12_board/login.do";
+		
+		String target = url.substring(url.lastIndexOf('/'+1));
+		System.out.println(target);
+		
+
+	}
+
+}

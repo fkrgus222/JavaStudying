@@ -1,0 +1,71 @@
+package 주민번호체크;
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class JuminCheckEx {
+	
+	public static void main(String[] args) {
+		//준비 단계 : 필요 변수, 배열의 초기화
+		String juminNum;
+		int sum = 0;
+		int[] weight = {2,3,4,5,6,7,0,8,9,2,3,4,5};
+		int temp, result;
+		
+		//입력단계
+		System.out.println("주민번호 입력 >>>  ");
+		Scanner scan = new Scanner(System.in);
+		juminNum = scan.next();
+		
+		/*
+		 * 입력받느 주민번호를 유효성 검사 => 정규 표현식(regex) 패턴 적용
+		 */
+		String regex = "^[0-9]{6}-[1234][0-9]{6}$";
+		
+		//[첫번째 방법]
+//		boolean check = Pattern.matches(regex,juminNum);
+		
+		//[두번째 방법]
+		boolean check = juminNum.matches(regex);
+		
+		
+		if (check == false) {
+			System.out.println("입력한 주민번호는 정규 표현식 형식에 맞지 않음!");
+		}
+		else {
+			System.out.println("입력된 주민번호는 정규 표현식에 형식에 적합함!");
+		}
+		
+		//1단계 적용 => sum 구하기 
+		System.out.println("=====1=====");
+		
+		for (int i = 0 ; i < juminNum.length()-1; i ++)
+		{
+			if (juminNum.charAt(i) == '-') continue;
+			sum += (juminNum.charAt(i)-48) * weight[i];
+		}
+		System.out.println("sum : " + sum);
+		//got SUM value
+		
+		
+		//2단계 적용.
+		System.out.println("=====2=====");
+		temp = 11 - sum%11;
+		System.out.println("temp : " + temp);
+		
+		
+		//3단계
+		System.out.println("=====3=====");
+		result = temp%10;
+		int lastDigit = juminNum.charAt(-1);
+		
+		if (lastDigit == result) System.out.println("Your JuminNumber is Correct!!");
+		else System.out.println("Your JuminNumber is Not Correct!!");
+		
+		
+		
+		
+		
+	} //main end 
+
+}   //class end 

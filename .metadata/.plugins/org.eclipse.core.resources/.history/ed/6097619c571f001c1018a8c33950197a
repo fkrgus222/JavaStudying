@@ -1,0 +1,10 @@
+package 주민번호체크;
+
+public class JuminCheckEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

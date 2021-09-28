@@ -1,0 +1,32 @@
+package Set계열의클래스들예제;
+
+import java.util.Set;
+import java.util.HashSet;
+
+public class HashSetClassEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set<Member> member_set = new HashSet<Member>();
+		
+		
+		//[사례] 금융권인 경우 똑같은 객체가 두 개가 생성될 수 없다.
+		
+		Member member1 = new Member("손흥민",29,"111111-1111111");
+		Member member2 = new Member("손흥민",29,"111111-1111111");
+		
+		member_set.add(member1);
+		member_set.add(member2);
+		
+		System.out.println("총 객체수: " + member_set.size());  //총 객체수 : 1
+		
+		System.out.println(member1.hashCode());
+		System.out.println(member2.hashCode());
+		System.out.println(member1.equals(member2));  //true
+		//둘의 해시코드 값이 똑같다. 객체가 두 개가 아니라 한 개가 만들어진거임.
+		
+	}
+
+}
+ 

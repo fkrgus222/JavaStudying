@@ -1,0 +1,28 @@
+package List계열의클래스들예제;
+
+import java.util.Vector;
+import java.util.List;
+
+public class VectorClassEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String[] name = {"김진영","최인호","조정래","김흥신","박경리"};
+		
+		//Vector 객체 생성
+		//List<String> list = new Vector<String>();  //기본이 10개인 가변 배열을 생성 (공간이 부족하면 10개씩 더 늘어남)
+		List<String> list = new Vector<String>(4, 3);
+		
+		//Vector 클래스의 주요 메소드 적용
+		System.out.println("백터에 저장된 요소의 개수: " + list.size());
+		//  --> 0임, 공간만 확보한거라.
+		
+		String t = "1";
+		System.out.println(t.length());
+		
+		
+		
+	}
+
+}

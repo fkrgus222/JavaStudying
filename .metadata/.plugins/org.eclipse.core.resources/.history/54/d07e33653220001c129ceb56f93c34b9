@@ -1,0 +1,10 @@
+package 응용문제_로또;
+
+public class TeacherMakeLotto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

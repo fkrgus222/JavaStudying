@@ -1,0 +1,25 @@
+package 응용문제_로또;
+
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+
+public class MakeLotto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<Integer> lotto = new HashSet<Integer>();
+		
+		boolean FLAG = true;
+		Random random = new Random();
+		while (FLAG) {
+//			int tmp = random.nextInt();
+			int tmp = random.nextInt(45);
+			lotto.add(tmp);
+			if (lotto.size() == 6) break;
+		}
+		
+		System.out.println(lotto);
+
+	} // end of main
+} //end of class

@@ -1,0 +1,28 @@
+package Map계열의클래스들예제;
+
+import java.util.Hashtable;
+
+public class HashtableClassEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] userID = {"Lee","Kim","Jang","Wang","Ha"};
+		String[] password = {"L123","K456","J234","W896","H567"};
+		
+		//Hashtable 객체 생성
+		Hashtable<String, String> ht = new Hashtable<String, String>(userID.length);
+		
+		//객체 저장
+		for (int i = 0 ; i < userID.length ; i++) {
+			ht.put(userID[i], password[i]);
+		}
+		
+		System.out.println(ht);
+		//{Jang=J234, Ha=H567, Lee=L123, Wang=W896, Kim=K456} 배열은[]인것과 달리 {}로저장, 
+		//순서가 중요하지 않다. Key를 통해서 찾으니까. 
+		String target = ht.get(userID[2]);
+		System.out.println(target);
+		
+		
+	}
+}

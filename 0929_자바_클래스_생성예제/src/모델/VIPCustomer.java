@@ -8,14 +8,15 @@ public class VIPCustomer extends Customer{
 	protected int agentID; // 상담 직원 ID	
 	
 	VIPCustomer(int userID, String userName, int agentID){
-		super(userID, userName, 5);
+		super(userID, userName, 5,"VIP");
 		this.discountRate = 10;
 		this.agentID = agentID;
 	}
 	
 	public void pay(int price) {
-		System.out.println(price + "의 가격은 : " + (int)(price*0.9) + " 입니다.");
-		bonusPoint += price/100*bonusRate;
+		String target = Utils.toNumberFormat( (int)(price/100*(100-discountRate)) );
+		System.out.println(userName + "님이 지불할 "+price + "의 가격은 : " + target + " 입니다.");
+		bonusPoint +=  (int)(price/100*(100-discountRate))/100*bonusRate;
 	}
 	
 	public void show() {

@@ -16,6 +16,6 @@ public class CustomerTesting {
 		customer1.show();
 		customer2.show();
 		customer3.show();
-
+		
 	}
 }

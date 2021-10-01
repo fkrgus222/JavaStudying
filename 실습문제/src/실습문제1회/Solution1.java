@@ -1,25 +1,25 @@
-package ½Ç½À¹®Á¦1È¸;
+package ì‹¤ìŠµë¬¸ì œ1íšŒ;
 
 import java.util.Scanner;
 
 public class Solution1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-		System.out.println("¹®ÀÚ ÇÑ ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
 		
-		//¹®ÀÚ¸¦ ÀÔ·Â¹Ş°í ÇØ´ç ¹®ÀÚÀÇ Int°ªÀ» ¾ò´Â´Ù(inputInt).
+		Scanner in = new Scanner(System.in);
+//		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
+		
+		//ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·Â¹Ş°ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Intï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â´ï¿½(inputInt).
 		char input = in.next().charAt(0);
 		
-		//inputInt °ªÀÇ ¹üÀ§¿¡ µû¶ó ´ë¹®ÀÚ, ¼Ò¹®ÀÚ¸¦ ÆÇ´ÜÇÑ´Ù
+		//inputInt ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ë¹®ï¿½ï¿½, ï¿½Ò¹ï¿½ï¿½Ú¸ï¿½ ï¿½Ç´ï¿½ï¿½Ñ´ï¿½
 		if (input >= 'A' && input <= 'Z') {
 			System.out.println( (char)((int)input + 32) );
 		}
 		else if (input >= 'a' && input <= 'z') {
 			System.out.println( (char)((int)input - 32) );
 		}
-		else System.out.println("¿µ¹®ÀÚ°¡ ¾Æ´Õ´Ï´Ù.");
+//		else System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´Õ´Ï´ï¿½.");
 		
 	}
 

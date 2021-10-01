@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Solution2 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {rdm
 		
 		int[] arr = {0,0,0,0,0,0,0,0};       //각 돈의 단위가 몇개씩 필요한지를 저장할 배열
 		int[] arr2 = {50000,10000,5000,1000,500,100,50,10};  //각 돈의 단위의 Int형태
